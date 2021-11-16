@@ -1,4 +1,5 @@
 <?php
+/*Klávesnice */
 
 $keyboard[0]['brand'] = "Razer";
 $keyboard[0]['type'] = "Mechanická";
@@ -30,40 +31,43 @@ $keyboard[5]['type'] = "Mechanická";
 $keyboard[5]['color'] = "Bílá";
 $keyboard[5]['label'] = "Vulcan 122 AIMO";
 
-$person[0]['firstname'] = "Prokop";
-$person[0]['lastname'] = "Zeď";
-$person[0]['years'] = 14;
-$person[0]['weight'] = 60;
-$person[0]['height'] = 170;
-$person[0]['keyboard'] = $keyboard[3];
 
-$person[1]['firstname'] = "Jaroslav";
-$person[1]['lastname'] = "Melichar";
-$person[1]['years'] = 16;
-$person[1]['weight'] = 75;
-$person[1]['height'] = 187;
-$person[1]['keyboard'] = $keyboard[2];
 
-$person[2]['firstname'] = "Naco";
-$person[2]['lastname'] = "Chata";
-$person[2]['years'] = 22;
-$person[2]['weight'] = 90;
-$person[2]['height'] = 210;
-$person[2]['keyboard'] = $keyboard[0];
+/*LIDÉÉÉÉÉÉ */
+$people[0]['firstname'] = "Prokop";
+$people[0]['lastname'] = "Zeď";
+$people[0]['years'] = 14;
+$people[0]['weight'] = 60;
+$people[0]['height'] = 170;
+$people[0]['keyboard'] = $keyboard[3];
 
-$person[3]['firstname'] = "Tomáš";
-$person[3]['lastname'] = "Jedno";
-$person[3]['years'] = 55;
-$person[3]['weight'] = 105;
-$person[3]['height'] = 177;
-$person[3]['keyboard'] = $keyboard[5];
+$people[1]['firstname'] = "Jaroslav";
+$people[1]['lastname'] = "Melichar";
+$people[1]['years'] = 16;
+$people[1]['weight'] = 75;
+$people[1]['height'] = 187;
+$people[1]['keyboard'] = $keyboard[2];
 
-$person[4]['firstname'] = "Andreas";
-$person[4]['lastname'] = "Rupp";
-$person[4]['years'] = 15;
-$person[4]['weight'] = 150;
-$person[4]['height'] = 170;
-$person[4]['keyboard'] = $keyboard[4];
+$people[2]['firstname'] = "Naco";
+$people[2]['lastname'] = "Chata";
+$people[2]['years'] = 22;
+$people[2]['weight'] = 90;
+$people[2]['height'] = 210;
+$people[2]['keyboard'] = $keyboard[0];
+
+$people[3]['firstname'] = "Tomáš";
+$people[3]['lastname'] = "Jedno";
+$people[3]['years'] = 55;
+$people[3]['weight'] = 105;
+$people[3]['height'] = 177;
+$people[3]['keyboard'] = $keyboard[5];
+
+$people[4]['firstname'] = "Andreas";
+$people[4]['lastname'] = "Rupp";
+$people[4]['years'] = 15;
+$people[4]['weight'] = 150;
+$people[4]['height'] = 170;
+$people[4]['keyboard'] = $keyboard[4];
 
 ?>
 <!DOCTYPE html>
@@ -76,7 +80,7 @@ $person[4]['keyboard'] = $keyboard[4];
 <body>
     <?php
 for ($i=0; $i < 5; $i++) { 
-    echo $person[$i]['firstname'] . " " . $person[$i]['keyboard']['brand'] . " " . $person[$i]['keyboard']['type'] . " " . $person[$i]['keyboard']['color'] . " " . $person[$i]['keyboard']['label'];
+    echo $people[$i]['firstname'] . " " . $people[$i]['keyboard']['brand'] . " " . $people[$i]['keyboard']['type'] . " " . $people[$i]['keyboard']['color'] . " " . $people[$i]['keyboard']['label'];
     ?> <br>
     <?php
 }
