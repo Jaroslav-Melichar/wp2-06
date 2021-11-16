@@ -1,71 +1,69 @@
 <?php
 
-$keyboard[0]['capacity'] = 215;          
-$keyboard[0]['speed'] = "950 kmh";
-$keyboard[0]['weight'] = "41,145kg";      
-$keyboard[0]['wingspan'] = "35.8 m";
+$keyboard[0]['brand'] = "Razer";
+$keyboard[0]['type'] = "Mechanická";
+$keyboard[0]['color'] = "Černá";
+$keyboard[0]['label'] = "BlackWidow V3";
 
-$keyboard[1]['capacity'] = 4;          
-$keyboard[1]['speed'] = "230 km/h";
-$keyboard[1]['weight'] = "757 kg";
-$keyboard[1]['wingspan'] = "11 m";
+$keyboard[1]['brand'] = "Logitech";
+$keyboard[1]['type'] = "Mechanická";
+$keyboard[1]['color'] = "Černá";
+$keyboard[1]['label'] = "G915 Lightspeed";
 
-$keyboard[2]['capacity'] = 2;          
-$keyboard[2]['weight'] = "57 kg";
-$keyboard[2]['wingspan'] = "18 m";
+$keyboard[2]['brand'] = "Cherry";
+$keyboard[2]['type'] = "Mechanická";
+$keyboard[2]['color'] = "Růžová";
+$keyboard[2]['label'] = "MX Board 8.0";
 
-$keyboard[3]['capacity'] = 1;            
-$keyboard[3]['speed'] = "870 km/h";
-$keyboard[3]['weight'] = 	"3.800 kg";
-$keyboard[3]['wingspan'] = "12,51 m";
+$keyboard[3]['brand'] = "StealSeries";
+$keyboard[3]['type'] = "Mechanická";
+$keyboard[3]['color'] = "Černá";
+$keyboard[3]['label'] = "Apex Pro TKL";
 
-$keyboard[4]['capacity'] = 475;         
-$keyboard[4]['speed'] = "850 km/h";
-$keyboard[4]['weight'] = 	"640 000 kg";
-$keyboard[4]['wingspan'] = "88 m";
+$keyboard[4]['brand'] = "Asus";
+$keyboard[4]['type'] = "Mechanická";
+$keyboard[4]['color'] = "Šedá";
+$keyboard[4]['label'] = "ROG Claymore";
 
-$keyboard[5]['capacity'] = 19;		   
-$keyboard[5]['speed'] = "388 km/h";
-$keyboard[5]['weight'] = 	"6400 kg";
-$keyboard[5]['wingspan'] = "14,424 m";
+$keyboard[5]['brand'] = "Roccat";
+$keyboard[5]['type'] = "Mechanická";
+$keyboard[5]['color'] = "Bílá";
+$keyboard[5]['label'] = "Vulcan 122 AIMO";
 
+$person[0]['firstname'] = "Prokop";
+$person[0]['lastname'] = "Zeď";
+$person[0]['years'] = 14;
+$person[0]['weight'] = 60;
+$person[0]['height'] = 170;
+$person[0]['keyboard'] = $keyboard[3];
 
+$person[1]['firstname'] = "Jaroslav";
+$person[1]['lastname'] = "Melichar";
+$person[1]['years'] = 16;
+$person[1]['weight'] = 75;
+$person[1]['height'] = 187;
+$person[1]['keyboard'] = $keyboard[2];
 
-$people[0]['firstname'] = "John";
-$people[0]['lastname'] = "Slechta";
-$people[0]['age'] = "36";
-$people[0]['hoursflown'] = "1500";
-$people[0]['medicalcondition'] = "perfect";
-$people[0]['keyboard'] = $keyboard[1];
+$person[2]['firstname'] = "Naco";
+$person[2]['lastname'] = "Chata";
+$person[2]['years'] = 22;
+$person[2]['weight'] = 90;
+$person[2]['height'] = 210;
+$person[2]['keyboard'] = $keyboard[0];
 
-$people[1]['firstname'] = "Brian";
-$people[1]['lastname'] = "Fletcher";
-$people[1]['age'] = "48";
-$people[1]['hoursflown'] = "3500";
-$people[1]['medicalcondition'] = "glasess";
-$people[1]['keyboard'] = $keyboard[2];
+$person[3]['firstname'] = "Tomáš";
+$person[3]['lastname'] = "Jedno";
+$person[3]['years'] = 55;
+$person[3]['weight'] = 105;
+$person[3]['height'] = 177;
+$person[3]['keyboard'] = $keyboard[5];
 
-
-$people[2]['firstname'] = "Conor";
-$people[2]['lastname'] = "Mcdonald";
-$people[2]['age'] = "55";
-$people[2]['hoursflown'] = "6680";
-$people[2]['medicalcondition'] = "perfect";
-$people[2]['keyboard'] = $keyboard[3];
-
-$people[3]['firstname'] = "Paul";
-$people[3]['lastname'] = "Donald";
-$people[3]['age'] = "28";
-$people[3]['hoursflown'] = "400";
-$people[3]['medicalcondition'] = "overweight";
-$people[3]['keyboard'] = $keyboard[4];
-
-$people[4]['firstname'] = "Jake";
-$people[4]['lastname'] = "Mcdonald";
-$people[4]['age'] = "60";
-$people[4]['hoursflown'] = "8000";
-$people[4]['medicalcondition'] = "high_heart_presure";
-$people[4]['keyboard'] = $keyboard[5];
+$person[4]['firstname'] = "Andreas";
+$person[4]['lastname'] = "Rupp";
+$person[4]['years'] = 15;
+$person[4]['weight'] = 150;
+$person[4]['height'] = 170;
+$person[4]['keyboard'] = $keyboard[4];
 
 ?>
 <!DOCTYPE html>
@@ -78,7 +76,7 @@ $people[4]['keyboard'] = $keyboard[5];
 <body>
     <?php
 for ($i=0; $i < 5; $i++) { 
-    echo $people[$i]['firstname'] . " " . $people[$i]['keyboard']['capacity'] . " " . $people[$i]['keyboard']['speed'] . " " . $people[$i]['keyboard']['weight'] . " " . $people[$i]['keyboard']['wingspan'];
+    echo $person[$i]['firstname'] . " " . $person[$i]['keyboard']['brand'] . " " . $person[$i]['keyboard']['type'] . " " . $person[$i]['keyboard']['color'] . " " . $person[$i]['keyboard']['label'];
     ?> <br>
     <?php
 }
