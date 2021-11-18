@@ -40,12 +40,12 @@ $people[4]['height'] = 188;
     <title>Document</title>
 </head>
 <body>
-    <?php
-for ($i=0; $i < 5; $i++) { 
-    echo $people[$i]['firstname'] . " " . $people[$i]['keyboard']['brand'] . " " . $people[$i]['keyboard']['type'] . " " . $people[$i]['keyboard']['color'] . " " . $people[$i]['keyboard']['label'];
-    ?> <br>
-    <?php
+  <?php
+for ($i=0; $i < count($people); $i++)?>
+<h2><?= $people[$i]['firstname']['lastname']; ?></h2>
+<p><strong>Informace:</strong><?= $people[$i]['years']['weight']['height']; ?></p>
 }
+
 ?>
 </body>
 </html>
