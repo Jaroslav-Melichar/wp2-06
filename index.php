@@ -32,7 +32,7 @@ $keyboard[5]['label'] = "Vulcan 122 AIMO";
 
 
 //*PEOPLESSSS */
-$person[0]['firstname'] = "Onřej";
+$person[0]['firstname'] = "Ondřej";
 $person[0]['lastname'] = "Čábelka";
 $person[0]['years'] = 14;
 $person[0]['weight'] = 60;
@@ -78,8 +78,18 @@ $person[4]['keyboard'] = $keyboard[4];
 <body>
     <?php
 for ($i=0; $i < 5; $i++) { 
-    echo $person[$i]['firstname'] . " " . $person[$i]['keyboard']['brand'] . " " . $person[$i]['keyboard']['type'] . " " . $person[$i]['keyboard']['color'] . " " . $person[$i]['keyboard']['label'];
-    ?> <br>
+    echo $person[$i]['firstname'] . $person[$i]['lastname']. " " . $person[$i]['keyboard']['brand'] . " " . $person[$i]['keyboard']['type'] . " " . $person[$i]['keyboard']['color'] . " " . $person[$i]['keyboard']['label'];
+    ?> <br> <br>
+    <?php
+}
+?>
+<br>
+<br>
+<h2>NOT WORKING</h2>
+ <?php 
+for ($i=0; $i <5; $i++){
+    echo $person[$i]['firstname'] . $person[$i]['lastname']. "" . $person[$i]['years']."". $person[$i]['height'];
+    ?> <br> <br>
     <?php
 }
 ?>
